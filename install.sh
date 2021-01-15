@@ -16,7 +16,7 @@ echo -e "\n\nCopying files......\n\n"
 
 sleep 0.5
 
-cp ./lib/instapeek.py /usr/lib/python3.8/
+cp ./lib/instapeek.py /usr/lib/python3.9/
 cp ./src/instapeek-tool.py /usr/local/bin/instapeek
 chmod +x /usr/local/bin/instapeek
 
