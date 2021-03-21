@@ -82,7 +82,7 @@ class InstagramProfile(object):
 		self.information = self.InstagramInformation()
 
 	def peek(self):
-		r = requests.get(self.profile_api_url, headers={"content-type": "application/json"})
+		r = requests.get(self.profile_api_url, headers={"content-type": "application/json", "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"})
 		status_code = r.status_code
 
 		if status_code == 404:
